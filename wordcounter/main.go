@@ -20,6 +20,8 @@ func main() {
 	fmt.Println(count(os.Stdin, *lines, *byteCount))
 }
 
+
+
 func count(r io.Reader, countLines bool, countByte bool) int {
 	//scanner used to read text from a Reader such as files
 	scanner := bufio.NewScanner(r)
@@ -35,6 +37,9 @@ func count(r io.Reader, countLines bool, countByte bool) int {
 	// defining a counter
 	wc := 0
 
+
+	//if the countByte flag is true, we are going to count the number of bytes
+	//on each line
 	if countByte {
 		scanner.Split(bufio.ScanBytes)
 	}

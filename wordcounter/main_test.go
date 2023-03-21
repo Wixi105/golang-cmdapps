@@ -34,10 +34,10 @@ func TestCountLines(t *testing.T) {
 
 func TestByteCount(t *testing.T){
 	b := bytes.NewBufferString("There are five monkeys")
-	
+
 	exp := 22
 
-	res := count(b, false,true)
+	res := count(b, true,true)
 
 	if res != exp {
 		t.Errorf("Expected %d, got %d instead", exp, res)
