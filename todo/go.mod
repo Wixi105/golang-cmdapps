@@ -1,3 +1,3 @@
-module github.com/Wixi105/golang-cmdapps
+module cmdapps/todo
 
 go 1.20
